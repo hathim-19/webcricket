@@ -1,0 +1,137 @@
+/* Game */
+.player-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0rem;
+  min-height: 58vh;
+  /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player-button {
+  border: none;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.player-button:disabled {
+  opacity: 0.2;
+  transform: scale(0.98);
+}
+
+.player-button.p1 {
+  background: linear-gradient(145deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+}
+
+.player-button.p2 {
+  background: linear-gradient(145deg, #c33764 0%, #1d2671 100%);
+  color: white;
+}
+
+.player-name {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.score-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.latest-run-display {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.current-runs {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.divider {
+  color: #e74c3c;
+}
+
+.status-text {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}
+
+.winner-message {
+  font-size: 2rem;
+  color: #27ae60; /* Green color for winner text */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.total-score {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-top: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Hover effects */
+.player-button:not(:disabled):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.player-button:not(:disabled):active {
+  transform: translateY(0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Winner */
+.winner-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000; /* Red to highlight winner */
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.player-button {
+  transition: background 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .player-container {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  .current-runs {
+    font-size: 2rem;
+  }
+
+  .player-button {
+    padding: 1.5rem 2.5rem;
+  }
+}

@@ -1,0 +1,42 @@
+/* about.css */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: black;
+}
+
+.about-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #5563de; /* Matches the darker blue from the original gradient */
+}
+
+.section-card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.section-card ul {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-left: 20px;
+}
+
+.section-card ul li {
+  margin-bottom: 10px;
+}

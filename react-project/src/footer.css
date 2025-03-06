@@ -1,0 +1,10 @@
+/* Footer */
+
+.footer {
+  background: linear-gradient(135deg, #a8f1d0, #1e3c72);
+  color: black;
+  padding: 1px;
+  font-size: 1.1rem;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(5rem);
+}

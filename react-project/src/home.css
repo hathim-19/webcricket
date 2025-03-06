@@ -1,0 +1,67 @@
+/* home.css */
+/* Full viewport height, centered content */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+  /* background: linear-gradient(135deg, #74abe2, #5563de); */
+  color: black;
+  text-align: center;
+  padding: 20px;
+  /* transform: translateY(-137px); */
+}
+
+/* Tagline styling */
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Features list styling */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.features-list li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.features-list li::before {
+  content: "✓";
+  color: green;
+  margin-right: 10px;
+}
+
+/* Group buttons horizontally with a gap */
+.button-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style for buttons */
+.home-button {
+  background-color: aqua;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3sease, transform 0.2s;
+}
+
+/* Hover effect for buttons */
+.home-button:hover {
+  background-color: azure; /* Darker green on hover */
+  transform: scale(1.05);
+}
